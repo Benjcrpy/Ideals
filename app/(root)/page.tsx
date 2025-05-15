@@ -46,9 +46,23 @@ export default async function Home({ searchParams }: {
             <p className="no-result">No idea found</p>
           )}
         </ul>
+        <div className="py-6 mt-10 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8">
+                    <h1 className="text-slate-950 dark:text-slate-700">
+                    Copyright © {new Date().getFullYear()} Benjo
+                    </h1>
+                    <h3 className="text-slate-950 dark:text-slate-700">Version 1.0 | Build 1</h3>
+                  
+                </div>
       </section>
 
       <SanityLive/>
+      
+                
+            
+      
     </>
+
+
+
   );
 }
