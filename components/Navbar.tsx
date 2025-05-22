@@ -4,7 +4,6 @@ import Link from 'next/link'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { GithubIcon } from 'lucide-react';
-import Logo from "@/public/Logo.png"
 import Image from 'next/image';
 
 const Navbar = async () => {
@@ -14,7 +13,7 @@ const Navbar = async () => {
     <header className='py-3 px-5 bg-white shadow-sm font-work-sans'>
         <nav className='flex items-center justify-between '>
             <Link href="/">
-                <Image src={Logo} alt="logo" width={125} height={125}/>
+                <Image src="/logo.png" alt="logo" width={125} height={125}/>
             </Link>
 
 
