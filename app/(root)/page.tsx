@@ -20,13 +20,13 @@ export default async function Home({ searchParams }: {
 
   return (
     <>
-     <section className="cyan_container">
+     <section className="slate_container">
       <h1 className="heading">Give your idea, <br/>
         Connect with another technology!
       </h1>
 
       <p className="sub-heading !max-w-3xl">
-        Submit your Idea, Vote on Pitches, and Get notice from another developers!
+        Submit your Idea, And Get notice from another developers!
       </p>
 
       <SearchForm query={query}/>
@@ -50,7 +50,7 @@ export default async function Home({ searchParams }: {
                     <h1 className="text-slate-950 dark:text-slate-700">
                     Copyright © {new Date().getFullYear()} Benjo
                     </h1>
-                    <h3 className="text-slate-950 dark:text-slate-700">Version 1.0 | Build 1</h3>
+                    <h3 className="text-slate-950 dark:text-slate-700">Version 1.01 | Build 1</h3>
                   
                 </div>
       </section>

@@ -3,6 +3,9 @@ import { BadgePlus, LogOut } from 'lucide-react';
 import Link from 'next/link'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { GithubIcon } from 'lucide-react';
+import Logo from "@/public/Logo.png"
+import Image from 'next/image';
 
 const Navbar = async () => {
     const session = await auth();
@@ -11,7 +14,7 @@ const Navbar = async () => {
     <header className='py-3 px-5 bg-white shadow-sm font-work-sans'>
         <nav className='flex items-center justify-between '>
             <Link href="/">
-                <h1 className='text-xl text-slate-700'>Your Ideals</h1>
+                <Image src={Logo} alt="logo" width={125} height={125}/>
             </Link>
 
 
@@ -49,8 +52,9 @@ const Navbar = async () => {
                         
                         await signIn('github')
                     }}>
-                        <button type="submit">
-                            Login
+                        <button type="submit" className='rounded-lg bg-cyan-500 hover:bg-slate-900 text-slate-900 hover:text-slate-400 py-2 px-2 '>
+                            <span className='max-sm:hidden flex'>Login with <GithubIcon size={20} className='ml-3'/></span>
+                            <GithubIcon className="size-6 sm:hidden"/>
                         </button>
                     </form>
                 )}
